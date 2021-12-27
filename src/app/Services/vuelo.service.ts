@@ -33,4 +33,17 @@ export class VueloService {
 
     }
 
+    adquiriVuelos(Model: Vuelos):Observable<any> {
+
+        // let data = new FormData();
+        // data.append("id_usuario", model.id_usuario);
+        // return this.HttpClient.post(this.url + 'mis-vuelos', data)
+
+        let params =JSON.stringify(Vuelos);
+        let headers = new HttpHeaders().set('Content-type', 'application/json');
+
+        return this._http.post(this.url+'mis-vuelos', params, {headers: headers});
+
+    }
+
 }
