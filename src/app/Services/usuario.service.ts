@@ -19,7 +19,7 @@ export class UsuarioService {
     auth(model: Usuarios): Observable<any> {
         let params = JSON.stringify(Usuarios);
         let headers = new HttpHeaders().set('Content-type', 'application/json');
-        return this._http.post(this.url + 'mis-vuelos', params, { headers: headers });
+        return this._http.post(this.url + 'adquirir-vuelos', params, { headers: headers });
 
     }
 

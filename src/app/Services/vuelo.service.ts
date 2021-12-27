@@ -42,7 +42,7 @@ export class VueloService {
         let params =JSON.stringify(Vuelos);
         let headers = new HttpHeaders().set('Content-type', 'application/json');
 
-        return this._http.post(this.url+'mis-vuelos', params, {headers: headers});
+        return this._http.post(this.url+'login', params, {headers: headers});
 
     }
 

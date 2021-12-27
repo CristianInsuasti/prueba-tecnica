@@ -17,7 +17,7 @@ export class MisVuelosComponent implements OnInit {
     private _vueloService: VueloService
 
   ) {
-    this.vuelos = new Vuelos();
+    this.vuelos = new Vuelos('', '', '', '', '');
   }
 
   ngOnInit(): void {
